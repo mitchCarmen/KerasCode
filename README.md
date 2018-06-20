@@ -27,111 +27,6 @@ train_data.head()
 ```
 
 
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>critic_rating</th>
-      <th>is_action</th>
-      <th>is_exclusive_to_us</th>
-      <th>is_portable</th>
-      <th>is_role_playing</th>
-      <th>is_sequel</th>
-      <th>is_sports</th>
-      <th>suitable_for_kids</th>
-      <th>total_earnings</th>
-      <th>unit_price</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>3.5</td>
-      <td>1</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>132717</td>
-      <td>59.99</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>4.5</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0</td>
-      <td>83407</td>
-      <td>49.99</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>3.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0</td>
-      <td>62423</td>
-      <td>49.99</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>4.5</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>69889</td>
-      <td>39.99</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>4.0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>1</td>
-      <td>161382</td>
-      <td>59.99</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-
-
-
 ```python
 filepath = '/Users/Mitch/Documents/DATA SCIENCE/Self Learning Not School/Ex_Files_Building_Deep_Learning_Apps/Exercise Files/03/sales_data_test.csv'
 test_data = pd.read_csv(filepath, sep = ',')
@@ -142,124 +37,16 @@ test_data = pd.read_csv(filepath, sep = ',')
 test_data.head()
 ```
 
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>critic_rating</th>
-      <th>is_action</th>
-      <th>is_exclusive_to_us</th>
-      <th>is_portable</th>
-      <th>is_role_playing</th>
-      <th>is_sequel</th>
-      <th>is_sports</th>
-      <th>suitable_for_kids</th>
-      <th>total_earnings</th>
-      <th>unit_price</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>3.5</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>1</td>
-      <td>247537</td>
-      <td>59.99</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>2.5</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>73960</td>
-      <td>59.99</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>3.5</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0</td>
-      <td>82671</td>
-      <td>59.99</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>4.0</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>137456</td>
-      <td>39.99</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>2.0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>89639</td>
-      <td>59.99</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-
-
-
 ```python
 from sklearn.preprocessing import MinMaxScaler
 
 scaler = MinMaxScaler(feature_range=(0,1))
 ```
 
-
 ```python
 scaled_train = scaler.fit_transform(train_data)
 scaled_test = scaler.transform(test_data) # Applys the same amount of scaling to the Test as was to the Train
 ```
-
 
 ```python
 # Create new pandas DataFrame objects from the scaled data
@@ -330,53 +117,6 @@ model.fit(X, Y,
 
 
 
-    ---------------------------------------------------------------------------
-
-    ValueError                                Traceback (most recent call last)
-
-    <ipython-input-26-559182244e1e> in <module>()
-         22          shuffle = True,
-         23          verbose = 2,
-    ---> 24          callbacks = [logger]) # This is necessary for the TensorBoard
-         25 # To view the TensorBoard, find the log folder in dir, put it in tensorboard folder with name and then use Terminal to 'tensorboard --logdir=path directory'... Also cannot have spaces in the path!
-
-
-    ~/anaconda3/lib/python3.5/site-packages/keras/engine/training.py in fit(self, x, y, batch_size, epochs, verbose, callbacks, validation_split, validation_data, shuffle, class_weight, sample_weight, initial_epoch, steps_per_epoch, validation_steps, **kwargs)
-       1040                                         initial_epoch=initial_epoch,
-       1041                                         steps_per_epoch=steps_per_epoch,
-    -> 1042                                         validation_steps=validation_steps)
-       1043 
-       1044     def evaluate(self, x=None, y=None,
-
-
-    ~/anaconda3/lib/python3.5/site-packages/keras/engine/training_arrays.py in fit_loop(model, f, ins, out_labels, batch_size, epochs, verbose, callbacks, val_f, val_ins, shuffle, callback_metrics, initial_epoch, steps_per_epoch, validation_steps)
-        217                         for l, o in zip(out_labels, val_outs):
-        218                             epoch_logs['val_' + l] = o
-    --> 219         callbacks.on_epoch_end(epoch, epoch_logs)
-        220         if callback_model.stop_training:
-        221             break
-
-
-    ~/anaconda3/lib/python3.5/site-packages/keras/callbacks.py in on_epoch_end(self, epoch, logs)
-         75         logs = logs or {}
-         76         for callback in self.callbacks:
-    ---> 77             callback.on_epoch_end(epoch, logs)
-         78 
-         79     def on_batch_begin(self, batch, logs=None):
-
-
-    ~/anaconda3/lib/python3.5/site-packages/keras/callbacks.py in on_epoch_end(self, epoch, logs)
-        863 
-        864         if not self.validation_data and self.histogram_freq:
-    --> 865             raise ValueError("If printing histograms, validation_data must be "
-        866                              "provided, and cannot be a generator.")
-        867         if self.embeddings_data is None and self.embeddings_freq:
-
-
-    ValueError: If printing histograms, validation_data must be provided, and cannot be a generator.
-
-
-
 ```python
 RUN_NAME = 'run2 with 5 nodes' # For comparing different trainings in TensorBoard
 
@@ -407,53 +147,6 @@ model.fit(X, Y,
 
     Epoch 1/50
      - 0s - loss: 0.0352
-
-
-
-    ---------------------------------------------------------------------------
-
-    ValueError                                Traceback (most recent call last)
-
-    <ipython-input-27-1f1aa3dadaff> in <module>()
-         22          shuffle = True,
-         23          verbose = 2,
-    ---> 24          callbacks = [logger]) # This is necessary for the TensorBoard
-         25 # To view the TensorBoard, find the log folder in dir, put it in tensorboard folder with name and then use Terminal to 'tensorboard --logdir=path directory'... Also cannot have spaces in the path!
-
-
-    ~/anaconda3/lib/python3.5/site-packages/keras/engine/training.py in fit(self, x, y, batch_size, epochs, verbose, callbacks, validation_split, validation_data, shuffle, class_weight, sample_weight, initial_epoch, steps_per_epoch, validation_steps, **kwargs)
-       1040                                         initial_epoch=initial_epoch,
-       1041                                         steps_per_epoch=steps_per_epoch,
-    -> 1042                                         validation_steps=validation_steps)
-       1043 
-       1044     def evaluate(self, x=None, y=None,
-
-
-    ~/anaconda3/lib/python3.5/site-packages/keras/engine/training_arrays.py in fit_loop(model, f, ins, out_labels, batch_size, epochs, verbose, callbacks, val_f, val_ins, shuffle, callback_metrics, initial_epoch, steps_per_epoch, validation_steps)
-        217                         for l, o in zip(out_labels, val_outs):
-        218                             epoch_logs['val_' + l] = o
-    --> 219         callbacks.on_epoch_end(epoch, epoch_logs)
-        220         if callback_model.stop_training:
-        221             break
-
-
-    ~/anaconda3/lib/python3.5/site-packages/keras/callbacks.py in on_epoch_end(self, epoch, logs)
-         75         logs = logs or {}
-         76         for callback in self.callbacks:
-    ---> 77             callback.on_epoch_end(epoch, logs)
-         78 
-         79     def on_batch_begin(self, batch, logs=None):
-
-
-    ~/anaconda3/lib/python3.5/site-packages/keras/callbacks.py in on_epoch_end(self, epoch, logs)
-        863 
-        864         if not self.validation_data and self.histogram_freq:
-    --> 865             raise ValueError("If printing histograms, validation_data must be "
-        866                              "provided, and cannot be a generator.")
-        867         if self.embeddings_data is None and self.embeddings_freq:
-
-
-    ValueError: If printing histograms, validation_data must be provided, and cannot be a generator.
 
 
 ### Test the model
